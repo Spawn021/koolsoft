@@ -1,8 +1,11 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
+import Button from './Button';
+import Ripple from './Ripple';
 import OtsvLogo from '~/assets/images/logo-otsv.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { BsCart3 } from 'react-icons/bs';
 const cx = classNames.bind(styles);
 function Header() {
    return (
@@ -128,16 +131,25 @@ function Header() {
                         KÍCH HOẠT
                      </a>
                   </li>
-                  <li className={cx('header__navbar-item')}>
+                  <li className={cx('header__navbar-item', 'header__navbar-item-has-cart')}>
                      <a href="" className={cx('header__navbar-item-link')}>
-                        <FontAwesomeIcon className={cx('header__navbar-item-icon')} icon={faCartShopping} />
+                        <BsCart3 className={cx('header__navbar-item-icon')} />
                      </a>
+                     <div className={cx('header__cart')}>
+                        <span className={cx('header__cart-name')}>Giỏ hàng</span>
+                     </div>
                   </li>
                   <li className={cx('header__navbar-item')}>
-                     <button className={cx('header__navbar-item-btn')}>ĐĂNG NHẬP</button>
+                     <Button>
+                        ĐĂNG NHẬP
+                        <Ripple color={'#617595'} duration={1000} />
+                     </Button>
                   </li>
                   <li className={cx('header__navbar-item')}>
-                     <button className={cx('header__navbar-item-btn')}>ĐĂNG KÝ</button>
+                     <Button>
+                        ĐĂNG KÝ
+                        <Ripple color={'#617595'} duration={1000} />
+                     </Button>
                   </li>
                </ul>
             </div>
