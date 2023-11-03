@@ -3,8 +3,8 @@ import styles from './Header.module.scss';
 import Button from './Button';
 import Ripple from './Ripple';
 import OtsvLogo from '~/assets/images/logo-otsv.webp';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { BsCart3 } from 'react-icons/bs';
 const cx = classNames.bind(styles);
 function Header() {
