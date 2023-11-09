@@ -5,6 +5,7 @@ import Button from './Button';
 import Ripple from './Ripple';
 import OtsvLogo from '~/assets/images/logo-otsv.webp';
 import CartIcon from '~/assets/images/icons/cart.svg';
+import { BsChevronUp } from 'react-icons/bs';
 const cx = classNames.bind(styles);
 function Header() {
    const [isScrolled, setIsScrolled] = useState(false);
@@ -29,6 +30,13 @@ function Header() {
    const wrapperClasses = cx('wrapper', { scrolled: isScrolled });
    return (
       <header className={wrapperClasses}>
+         <div className={cx('chat-panel')}>
+            <button className={cx('float-chat')}>
+               <img src="https://onthisinhvien.com/images/icon/otsv/message.svg"></img>
+               <span>Nhắn tin cho Ôn Thi Sinh Viên!</span>
+               <BsChevronUp className={cx('icon-mess')} />
+            </button>
+         </div>
          <div className={cx('grid')}>
             <div className={cx('header__navbar')}>
                <ul className={cx('header__navbar-list')}>
