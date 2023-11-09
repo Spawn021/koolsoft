@@ -1,16 +1,34 @@
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import Button from './Button';
 import Ripple from './Ripple';
 import OtsvLogo from '~/assets/images/logo-otsv.webp';
 import CartIcon from '~/assets/images/icons/cart.svg';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-// import { BsCart3 } from 'react-icons/bs';
 const cx = classNames.bind(styles);
 function Header() {
+   const [isScrolled, setIsScrolled] = useState(false);
+
+   useEffect(() => {
+      const handleScroll = () => {
+         // Kiểm tra vị trí cuộn và cập nhật trạng thái
+         const scrolled = window.scrollY > 0;
+         setIsScrolled(scrolled);
+      };
+
+      // Thêm sự kiện cuộn
+      window.addEventListener('scroll', handleScroll);
+
+      // Làm sạch sự kiện khi component unmount
+      return () => {
+         window.removeEventListener('scroll', handleScroll);
+      };
+   }, []);
+
+   // Sử dụng classNames để quản lý class và thêm class 'scrolled' nếu đã cuộn
+   const wrapperClasses = cx('wrapper', { scrolled: isScrolled });
    return (
-      <header className={cx('wrapper')}>
+      <header className={wrapperClasses}>
          <div className={cx('grid')}>
             <div className={cx('header__navbar')}>
                <ul className={cx('header__navbar-list')}>

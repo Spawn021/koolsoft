@@ -6,12 +6,15 @@ import SwiperComponent from './components/Swiper/Swiper';
 import ListItemCount from './components/ListItemCount/ListItemCount';
 import SchoolCard from './components/Card/SchoolCard';
 import SwiperFeedBack from './components/SwiperFeedBack/SwiperFeedBack';
+import LabTabs from './components/LabTabs/LabTabs';
 import YearIcon from '../../assets/images/icons/nam.svg';
 import SchoolIcon from '../../assets/images/icons/truong.svg';
 import CourseIcon from '../../assets/images/icons/khoa-luyen.svg';
 import StdIcon from '../../assets/images/icons/hocvien.svg';
 import RateIcon from '../../assets/images/icons/fireStar.svg';
 import PassIcon from '../../assets/images/icons/hai-long.svg';
+import { BiChevronRight } from 'react-icons/bi';
+import Header from '~/components/Layout/DefaultLayout/Header';
 const cx = classNames.bind(styles);
 function Home() {
    return (
@@ -301,6 +304,72 @@ function Home() {
                               </div>
                            </div>
                         </div>
+                     </div>
+                  </div>
+               </div>
+               <div className={cx('mission')}>
+                  <div className={cx('wrapper-mission')}>
+                     <div className={cx('name')}>
+                        <h2>Hệ thống Ôn thi sinh viên</h2>
+                     </div>
+                     <LabTabs />
+                  </div>
+               </div>
+               <div className={cx('wrapper-activity')}>
+                  <div className={cx('container-activity')}>
+                     <div className={cx('title-activity')}>
+                        <h2>Hoạt động tiêu biểu</h2>
+                        <p>Đây là những sự kiện, hoạt động ghi dấu ấn của OTSV trong năm</p>
+                        <div className={cx('list-activity')}>
+                           <div className={cx('item-activity')}>
+                              <div className={cx('image-activity')}>
+                                 <img
+                                    className={cx('image')}
+                                    src="https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F136923477-1638332088547-neuyouthfestival2021.jpg&w=1920&q=75"
+                                 ></img>
+                              </div>
+                              <div className={cx('info-activity')}>
+                                 <div className={cx('name-activity')}>
+                                    Ôn thi sinh viên HL - NEU YOUTH FESTIVAL 2021
+                                 </div>
+                                 <div className={cx('date-activity')}>Ngày 01/12/2021</div>
+                              </div>
+                           </div>
+                           <div className={cx('item-activity')}>
+                              <div className={cx('image-activity')}>
+                                 <img
+                                    className={cx('image')}
+                                    src="https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F74392169-1655117994323-06.jpg&w=1920&q=75"
+                                 ></img>
+                              </div>
+                              <div className={cx('info-activity')}>
+                                 <div className={cx('name-activity')}>
+                                    NHỮNG ĐIỀU CẦN PHẢI BIẾT TRƯỚC KHI VÀO TDTU CỦA CÁC TÂN SINH VIÊN
+                                 </div>
+                                 <div className={cx('date-activity')}>Ngày 13/06/2022</div>
+                              </div>
+                           </div>
+                           <div className={cx('item-activity')}>
+                              <div className={cx('image-activity')}>
+                                 <img
+                                    className={cx('image')}
+                                    src="https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F686543180-1652239498046-chinhphuca.png&w=1920&q=75"
+                                 ></img>
+                              </div>
+                              <div className={cx('info-activity')}>
+                                 <div className={cx('name-activity')}>
+                                    Học bổng HL dành cho sinh viên giỏi các trường đại học
+                                 </div>
+                                 <div className={cx('date-activity')}>Ngày 11/05/2022</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className={cx('show-more')}>
+                        <button>
+                           Xem thêm
+                           <BiChevronRight className={cx('icon-chev')} />
+                        </button>
                      </div>
                   </div>
                </div>
