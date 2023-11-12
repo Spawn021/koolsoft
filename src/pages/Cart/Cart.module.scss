@@ -1,0 +1,221 @@
+.wrapper {
+   width: 100%;
+   height: 100%;
+   background-color: #f2f6fc;
+}
+.container-center {
+   width: 77%;
+   margin: 0 auto;
+   padding: 0 24px;
+}
+.container {
+   height: 100%;
+   margin: 0 auto;
+}
+.banner-school {
+   width: 100%;
+   margin: 0 auto;
+   padding-top: 30px;
+   object-fit: cover;
+}
+.image-banner {
+   width: 100%;
+   object-fit: cover;
+}
+.category-course {
+   width: 100%;
+   height: 100%;
+   padding-top: 30px;
+}
+.header-category-course {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.name-school {
+   color: #ec1f24;
+   text-transform: uppercase;
+   font-size: 22px;
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+}
+.school-name {
+   position: relative;
+   margin-left: 20px;
+   padding-bottom: 6px;
+}
+.school-name::after {
+   position: absolute;
+   content: '';
+   top: 23px;
+   left: 0;
+   bottom: 5px;
+   width: 100%;
+   height: 2px;
+   background: #ec1f24;
+}
+.search-course {
+   display: flex;
+   width: 40%;
+   justify-content: space-between;
+   align-items: space-between;
+}
+.btn-combo {
+   background: #e10422;
+   color: #fefeff;
+   font-weight: 700;
+   padding: 8px 10px 7px;
+   border-radius: 10px;
+   margin-right: 20px;
+   border: none;
+   line-height: 24.5px;
+   font-size: 14px;
+   text-transform: uppercase;
+}
+.form-search {
+   width: 70%;
+   position: relative;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+.input-search {
+   background-color: #fff;
+   width: 100%;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   padding: 7px 20px;
+}
+.input-search::placeholder {
+   font-weight: 400;
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   line-height: 24px;
+   width: 280px;
+   color: #a2a2a2;
+}
+.input-search:focus {
+   outline: #a2a2a2;
+   border-color: #a2a2a2;
+}
+.button-search {
+   position: absolute;
+   top: 8px;
+   right: 12px;
+   border: 0;
+   background: 0;
+   font-size: 17px;
+   color: rgb(194, 198, 211);
+}
+.block-category-school {
+   padding: 12px 0;
+}
+.name-category {
+   display: block;
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 12px;
+   margin-top: 15px;
+   text-transform: uppercase;
+   color: #1c3967;
+}
+.list-course {
+   width: calc(100% + 16px);
+   margin-left: -16px;
+   display: flex;
+   flex-flow: wrap;
+   justify-content: start;
+   align-content: flex-start;
+}
+.show-more {
+   padding-top: 20px;
+   text-align: right;
+   padding-bottom: 20px;
+}
+.show-more button {
+   border: 1px solid #1c3967;
+   color: #1c3967;
+   cursor: pointer;
+   background: transparent;
+   padding: 5px 5px 5px 15px;
+   border-radius: 15px;
+   display: flex;
+   margin-left: auto;
+   margin-bottom: 20px;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 14px;
+   line-height: 24.5px;
+   font-weight: bold;
+   position: relative;
+}
+.icon-chev {
+   font-size: 23px;
+   margin-left: 10px;
+   margin-top: -4px;
+}
+.panel-feedback {
+   padding-top: 20px;
+   padding-bottom: 40px;
+}
+.feedback-container {
+   padding: 0 24px;
+   text-align: center;
+}
+.feedback-container h3 {
+   margin: 30px 0;
+   color: #1c3967;
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 35.01px;
+   text-transform: uppercase;
+}
+.slide-feedback {
+   width: 1120px;
+   margin: 0 auto;
+   padding: 30px 20px 0px !important;
+}
+.achive {
+   background-color: var(--background-color);
+   width: 100%;
+   height: 270px;
+}
+.slogan {
+   line-height: 37.5px;
+   color: #1c3967;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-size: 25px;
+   color: #1c3967;
+   text-align: center;
+   font-weight: 600;
+   margin: 50px 0 20px;
+}
+.static-wrapper {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   margin-top: 25px;
+   padding-bottom: 30px;
+}
+.communities {
+   padding-bottom: 30px;
+   margin-top: 80px;
+}
+.communities h2 {
+   font-size: 25px;
+   color: #1c3967;
+   text-align: center;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin: 50px 0 20px;
+   line-height: 37.5px;
+}
+.list-item-communities {
+   display: flex;
+   flex-flow: wrap;
+   margin-top: -40px;
+   width: calc(100% + 40px);
+   margin-left: -40px;
+}
