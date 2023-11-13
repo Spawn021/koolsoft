@@ -308,6 +308,10 @@ ul {
    text-transform: uppercase;
    font-size: 18px;
    font-weight: 600;
+   cursor: pointer;
+}
+.btn-add-cart:active {
+   background-color: #cfcfcf;
 }
 .btn-buy-now {
    border: none;
@@ -320,4 +324,8 @@ ul {
    font-weight: 600;
    background: #ff7816;
    color: #fff;
+   cursor: pointer;
+}
+.btn-buy-now:active {
+   background-color: #ff9649;
 }

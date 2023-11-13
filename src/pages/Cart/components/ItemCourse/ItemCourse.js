@@ -5,12 +5,14 @@ import classNames from 'classnames/bind';
 import styles from './ItemCourse.module.scss';
 import { AiOutlineClose } from 'react-icons/ai';
 import { MdSell, MdFormatListNumbered, MdOutlineGTranslate } from 'react-icons/md';
+import { useCart } from '~/context/CartContext';
 
 const cx = classNames.bind(styles);
 
 function ItemCourse({ imgSrc, courseName, description, reviewCount, price }) {
    const [showModal, setShowModal] = useState(false);
-
+   const { addToCart } = useCart();
+   const { cart } = useCart();
    const openModal = () => {
       setShowModal(true);
    };
@@ -18,6 +20,12 @@ function ItemCourse({ imgSrc, courseName, description, reviewCount, price }) {
    const closeModal = () => {
       setShowModal(false);
    };
+   const isInCart = cart.some((item) => item.courseName === courseName);
+   const handleAddToCart = () => {
+      addToCart({ imgSrc, courseName, price });
+   };
+   console.log(handleAddToCart);
+
    return (
       <div className={cx('item-course-wrapper')}>
          <div className={cx('item-course')}>
@@ -190,7 +198,13 @@ function ItemCourse({ imgSrc, courseName, description, reviewCount, price }) {
                         </div>
                      </div>
                      <div className={cx('modal-footer')}>
-                        <button className={cx('btn-add-cart')}>Thêm vào giỏ hàng</button>
+                        {isInCart ? (
+                           <button className={cx('btn-add-cart')}>Xem giỏ hàng</button>
+                        ) : (
+                           <button className={cx('btn-add-cart')} onClick={handleAddToCart}>
+                              Thêm vào giỏ hàng
+                           </button>
+                        )}
                         <button className={cx('btn-buy-now')}>Mua ngay</button>
                      </div>
                   </div>

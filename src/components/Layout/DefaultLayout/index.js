@@ -25,10 +25,8 @@ function DefaultLayout({ children }) {
    return (
       <div className={cx('wrapper')}>
          <Header />
-         <div className={cx('container')}>
-            <div className={cx('content')} style={{ minHeight: contentHeight }}>
-               {children}
-            </div>
+         <div className={cx('content')} style={{ minHeight: contentHeight }}>
+            {children}
          </div>
          <Footer />
       </div>

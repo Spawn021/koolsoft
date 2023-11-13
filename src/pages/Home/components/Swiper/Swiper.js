@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import classNames from 'classnames/bind';
 import Slide1 from '~/assets/images/slides/Slide1.webp';
 import Slide2 from '~/assets/images/slides/Slide2.webp';
@@ -27,7 +27,7 @@ export default function SwiperComponent() {
             delay: 2500,
             disableOnInteraction: false,
          }}
-         modules={[Pagination]}
+         modules={[Autoplay, Pagination]}
          className="mySwiper"
       >
          <SwiperSlide>

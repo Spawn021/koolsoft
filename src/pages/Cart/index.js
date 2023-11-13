@@ -29,58 +29,60 @@ function Cart() {
       },
       {
          imgSrc:
-            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F543778860-1652533318725-triethocmac-lenin.jpg&w=1920&q=75',
-         courseName: 'NEU EBOOK PLUS TRIẾT HỌC MÁC-LÊNIN',
+            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F317789103-1652535269607-phapluatdaicuong.jpg&w=1920&q=75',
+         courseName: 'NEU EBOOK PLUS PHÁP LUẬT ĐẠI CƯƠNG',
          description: 'Cam kết chất lượng bài học. Học theo logic, dễ hiểu. Chia sẻ kinh nghiệm, mẹo làm bài tốt.',
-         reviewCount: 584,
+         reviewCount: 721,
          price: '40,000 VND',
       },
       {
          imgSrc:
-            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F543778860-1652533318725-triethocmac-lenin.jpg&w=1920&q=75',
-         courseName: 'NEU EBOOK PLUS TRIẾT HỌC MÁC-LÊNIN',
+            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F417326640-1652533277395-kinhtevimo1.jpg&w=1920&q=75',
+         courseName: 'NEU EBOOK PLUS KINH TẾ VI MÔ 1',
          description: 'Cam kết chất lượng bài học. Học theo logic, dễ hiểu. Chia sẻ kinh nghiệm, mẹo làm bài tốt.',
-         reviewCount: 584,
+         reviewCount: 658,
          price: '40,000 VND',
       },
       {
          imgSrc:
-            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F543778860-1652533318725-triethocmac-lenin.jpg&w=1920&q=75',
-         courseName: 'NEU EBOOK PLUS TRIẾT HỌC MÁC-LÊNIN',
-         description: 'Cam kết chất lượng bài học. Học theo logic, dễ hiểu. Chia sẻ kinh nghiệm, mẹo làm bài tốt.',
-         reviewCount: 584,
+            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F108412384-1666003901169-quantrikinhdoanh525350px.png&w=1920&q=75',
+         courseName: 'NEU TOÁN CHO CÁC NHÀ KINH TẾ 2023',
+         description:
+            '#1 TOP Ôn theo chương trình thi mới, luyện kỹ năng làm đề thi mới nhất cập nhật 2022 môn Toán cao cấp cho các nhà kinh tế',
+         reviewCount: 102,
+         price: '150,000 VND',
+      },
+      {
+         imgSrc:
+            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F28151125-1652535535482-coverebookneu1.jpg&w=1920&q=75',
+         courseName: 'NEU EBOOK PLUS CHỦ NGHĨA XÃ HỘI KHOA HỌC (cập nhật đề thi 23/11/2021)',
+         description: 'UPDATE ĐỀ THI MỚI NHẤT 23/11/2021, XEM NGAY!',
+         reviewCount: 477,
          price: '40,000 VND',
       },
       {
          imgSrc:
-            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F543778860-1652533318725-triethocmac-lenin.jpg&w=1920&q=75',
-         courseName: 'NEU EBOOK PLUS TRIẾT HỌC MÁC-LÊNIN',
-         description: 'Cam kết chất lượng bài học. Học theo logic, dễ hiểu. Chia sẻ kinh nghiệm, mẹo làm bài tốt.',
-         reviewCount: 584,
+            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F379028495-1652528611094-coverebookneu.jpg&w=1920&q=75',
+         courseName: 'NEU EBOOK PLUS NGUYÊN LÝ KẾ TOÁN',
+         description:
+            'Tóm tắt kiến thức trọng tâm môn học NLKT và phân dạng các dạng bài tập, các đề thi cuối kỳ cập nhật mới nhất.',
+         reviewCount: 470,
          price: '40,000 VND',
       },
       {
          imgSrc:
-            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F543778860-1652533318725-triethocmac-lenin.jpg&w=1920&q=75',
-         courseName: 'NEU EBOOK PLUS TRIẾT HỌC MÁC-LÊNIN',
+            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F932430182-1652535174268-kinhtechinhtri.jpg&w=1920&q=75',
+         courseName: 'NEU EBOOK PLUS KINH TẾ CHÍNH TRỊ',
          description: 'Cam kết chất lượng bài học. Học theo logic, dễ hiểu. Chia sẻ kinh nghiệm, mẹo làm bài tốt.',
-         reviewCount: 584,
+         reviewCount: 760,
          price: '40,000 VND',
       },
       {
          imgSrc:
-            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F543778860-1652533318725-triethocmac-lenin.jpg&w=1920&q=75',
-         courseName: 'NEU EBOOK PLUS TRIẾT HỌC MÁC-LÊNIN',
-         description: 'Cam kết chất lượng bài học. Học theo logic, dễ hiểu. Chia sẻ kinh nghiệm, mẹo làm bài tốt.',
-         reviewCount: 584,
-         price: '40,000 VND',
-      },
-      {
-         imgSrc:
-            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F543778860-1652533318725-triethocmac-lenin.jpg&w=1920&q=75',
-         courseName: 'NEU EBOOK PLUS TRIẾT HỌC MÁC-LÊNIN',
-         description: 'Cam kết chất lượng bài học. Học theo logic, dễ hiểu. Chia sẻ kinh nghiệm, mẹo làm bài tốt.',
-         reviewCount: 584,
+            'https://onthisinhvien.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fonthisinhvien.appspot.com%2Fimages%2F335089725-1652535932655-_.jpg&w=1920&q=75',
+         courseName: 'NEU EBOOK PLUS KINH TẾ LƯỢNG',
+         description: 'Cấp tốc dành cho người mất gốc. Hướng dẫn làm FULL các dạng bài sẽ gặp trong thi cuối kì',
+         reviewCount: 143,
          price: '40,000 VND',
       },
       {
@@ -184,9 +186,9 @@ function Cart() {
    const toggleShowMore = () => {
       setCoursesToShow(coursesToShow + 8);
    };
-   // useEffect(() => {
-   //    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-   // }, []);
+   useEffect(() => {
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+   }, []);
    return (
       <div className={cx('wrapper')}>
          <div className={cx('container-center')}>

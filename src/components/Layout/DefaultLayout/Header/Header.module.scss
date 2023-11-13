@@ -147,6 +147,22 @@
    width: 40px;
    height: 20px;
 }
+.num-course-in-cart {
+   position: absolute;
+   top: 32px;
+   right: 461px;
+   color: #fff;
+   background: red;
+   width: 16px;
+   height: 16px;
+   border-radius: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 10px;
+   cursor: pointer;
+   text-align: center;
+}
 .header__cart-name {
    font-size: 1.1rem;
    color: #ffffff;

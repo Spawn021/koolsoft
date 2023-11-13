@@ -6,8 +6,10 @@ import Ripple from './Ripple';
 import OtsvLogo from '~/assets/images/logo-otsv.webp';
 import CartIcon from '~/assets/images/icons/cart.svg';
 import { BsChevronUp } from 'react-icons/bs';
+import { useCart } from '~/context/CartContext';
 const cx = classNames.bind(styles);
 function Header() {
+   const { cart } = useCart();
    const [isScrolled, setIsScrolled] = useState(false);
 
    useEffect(() => {
@@ -49,8 +51,7 @@ function Header() {
                </ul>
                <ul className={cx('header__navbar-list')}>
                   <li className={cx('header__navbar-item')}>
-                     {/* eslint-disable-next-line */}
-                     <a href="#" className={cx('header__navbar-item-link')}>
+                     <a href="/" className={cx('header__navbar-item-link')}>
                         TRANG CHỦ
                      </a>
                   </li>
@@ -181,7 +182,13 @@ function Header() {
                   <li className={cx('header__navbar-item', 'header__navbar-item-has-cart')}>
                      {/* eslint-disable-next-line */}
                      <a href="" className={cx('header__navbar-item-link')}>
-                        <img className={cx('header__navbar-item-icon')} src={CartIcon} alt="CartIcon" />
+                        <img className={cx('header__navbar-item-icon')} src={CartIcon} alt="CartIcon"></img>
+                        <div
+                           className={cx('num-course-in-cart')}
+                           style={{ display: cart.length === 0 ? 'none' : 'block' }}
+                        >
+                           {cart.length}
+                        </div>
                      </a>
                      <div className={cx('header__cart')}>
                         <span className={cx('header__cart-name')}>Giỏ hàng</span>
