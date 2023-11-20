@@ -218,3 +218,36 @@
    width: calc(100% + 40px);
    margin-left: -40px;
 }
+@media (max-width: 576px) {
+   .container-center {
+      width: 100%;
+      padding: 0 10px;
+   }
+   .header-category-course {
+      flex-direction: column;
+   }
+   .name-school {
+      padding-bottom: 15px;
+   }
+   .search-course {
+      width: 100%;
+   }
+   .slide-feedback {
+      width: 485px;
+   }
+   .slogan {
+      font-size: 23px;
+   }
+   .static-wrapper {
+      flex-wrap: wrap;
+   }
+   .achive {
+      height: 100%;
+   }
+   .list-item-communities {
+      flex-flow: wrap;
+   }
+   .wrapper {
+      margin-bottom: -3469px;
+   }
+}

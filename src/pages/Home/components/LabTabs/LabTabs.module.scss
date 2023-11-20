@@ -78,3 +78,16 @@
 .list-item {
    padding-left: 30px;
 }
+@media (max-width: 576px) {
+   .tab {
+      width: 500px;
+   }
+   .tab-list {
+      width: 485px;
+      overflow-x: auto !important;
+   }
+   .content {
+      width: 400px;
+      padding-left: 20px;
+   }
+}

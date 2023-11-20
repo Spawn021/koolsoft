@@ -219,10 +219,9 @@ function Home() {
                   </div>
                </div>
                <div className={cx('panel')}>
-                  <div className={cx('panel-iframe')}>
+                  <div>
                      <iframe
-                        width="60%"
-                        height="491"
+                        className={cx('panel-iframe')}
                         src="https://www.youtube.com/embed/L1kI-MVZtEY"
                         title="HỌC ĐẠI HỌC - GẮNG LÀ CÓ - A+ KHÔNG KHÓ |👥 ONTHISINHVIEN"
                         frameBorder="0"

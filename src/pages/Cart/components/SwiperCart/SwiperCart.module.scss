@@ -21,3 +21,8 @@
    box-shadow: 2px 8px 10px #ced6e1;
    transition: 0.5s;
 }
+@media (max-width: 576px) {
+   .image-item {
+      width: 100px;
+   }
+}

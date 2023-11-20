@@ -47,3 +47,18 @@
    background-color: #e10422;
    color: #fff;
 }
+@media (max-width: 576px) {
+   .image-item {
+      width: 100px;
+   }
+   .container::before {
+      width: 60px;
+      top: 40px;
+      padding: 5px 17px;
+      font-size: 12px;
+   }
+   .container:hover::before {
+      left: 0px;
+      top: 22px;
+   }
+}

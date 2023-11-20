@@ -87,3 +87,13 @@
    color: #ec1f24;
    transition: 0.5s;
 }
+@media (max-width: 576px) {
+   .list-item-count .item-count .number-count {
+      font-size: 17px;
+      margin: 0;
+   }
+   .list-item-count {
+      width: 140px;
+      height: 154px;
+   }
+}

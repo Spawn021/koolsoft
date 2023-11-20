@@ -329,3 +329,34 @@ ul {
 .btn-buy-now:active {
    background-color: #ff9649;
 }
+@media (max-width: 576px) {
+   .item-course-wrapper {
+      flex-basis: 100%;
+      max-width: 100%;
+      padding: 20px 3px 0 20px;
+   }
+   .btn-view {
+      width: 21%;
+      height: 13%;
+   }
+   .btn-buy {
+      width: 19%;
+      height: 13%;
+   }
+   .modal-inner {
+      margin: 0px;
+      width: 440px;
+   }
+   .modal-image-wrapper {
+      flex-basis: 100%;
+      max-width: 100%;
+   }
+   .btn-add-cart {
+      font-size: 11px;
+      line-height: 19.25px;
+   }
+   .btn-buy-now {
+      font-size: 11px;
+      line-height: 19.25px;
+   }
+}

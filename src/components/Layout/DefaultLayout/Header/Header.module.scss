@@ -12,6 +12,7 @@
 }
 
 .header__navbar {
+   // width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -24,6 +25,7 @@
    padding-left: 0;
    margin: -4px;
    font-size: 0;
+   display: flex;
 }
 
 .header__navbar-item {
@@ -170,6 +172,38 @@
 .header__navbar-item-has-cart:hover .header__cart {
    display: block;
 }
+.chat-panel {
+   position: fixed;
+   right: 10px;
+   bottom: 10px;
+   z-index: 1001;
+}
+.float-chat {
+   display: inline-flex;
+   position: relative;
+   border: 0px;
+   text-decoration: none;
+   min-width: 64px;
+   background: #e10422;
+   color: rgb(255, 255, 255);
+   border-radius: 20px;
+   padding: 5px 20px;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer;
+}
+.float-chat span {
+   font-size: 14px;
+   line-height: 24.5px;
+   padding: 0 10px;
+}
+.float-chat img {
+   width: 20px;
+   height: 20px;
+}
+.icon-mess {
+   font-weight: bolder;
+}
 @keyframes change-color {
    0% {
       color: #ff0000;
@@ -203,35 +237,62 @@
       opacity: 1;
    }
 }
-.chat-panel {
-   position: fixed;
-   right: 10px;
-   bottom: 10px;
-   z-index: 1001;
+.navbar-mobile-list {
+   display: none;
 }
-.float-chat {
-   display: inline-flex;
-   position: relative;
-   border: 0px;
-   text-decoration: none;
-   min-width: 64px;
-   background: #e10422;
-   color: rgb(255, 255, 255);
-   border-radius: 20px;
-   padding: 5px 20px;
-   align-items: center;
-   justify-content: space-between;
+//Mobile header
+.header__navbar-bars {
+   width: 24px;
+   height: 24px;
+   color: rgb(211, 47, 47);
    cursor: pointer;
+   // display: none;
 }
-.float-chat span {
-   font-size: 14px;
-   line-height: 24.5px;
-   padding: 0 10px;
-}
-.float-chat img {
-   width: 20px;
-   height: 20px;
-}
-.icon-mess {
-   font-weight: bolder;
+@media (max-width: 576px) {
+   .header__navbar-bars {
+      display: block;
+      position: absolute;
+      // top: 0;
+      right: 50%;
+   }
+   .header__cart,
+   .header__navbar-slogan,
+   .header__navbar-item--has-list,
+   .header__navbar-item--has-cart,
+   .header__navbar-item-link[href=''],
+   .header__navbar-home-page {
+      display: none; /* Ẩn các phần tử tương ứng */
+      visibility: hidden;
+   }
+   .wrapper {
+      max-height: 46px;
+   }
+   .header__navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      height: 49px;
+      background-color: #f7f7f3;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px,
+         rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+   }
+   .header__navbar-logo-img {
+      width: 45px;
+      height: 45px;
+   }
+   .navbar-mobile-list {
+      position: fixed;
+      top: 49px;
+      left: 0;
+      right: 0;
+      width: 320px;
+      height: 100px;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+   }
+   .chat-panel {
+      display: none;
+   }
 }

@@ -105,3 +105,9 @@
 .card-school:hover svg path {
    fill: #fff;
 }
+@media (max-width: 576px) {
+   .card-school {
+      flex-basis: 100%;
+      max-width: 100%;
+   }
+}

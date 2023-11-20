@@ -34,6 +34,7 @@ export default function LabTabs() {
                   onChange={handleChange}
                   aria-label="Hệ thống Ôn thi sinh viên"
                   sx={{ justifyContent: 'space-around', display: 'flex' }}
+                  className={cx('tab-list')}
                >
                   <Tab label="Tầm nhìn" value="1" className={cx('myCustomTab', { myCustomTabActive: value === '1' })} />
                   <Tab label="Sứ mệnh" value="2" className={cx('myCustomTab', { myCustomTabActive: value === '2' })} />
