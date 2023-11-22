@@ -3,14 +3,15 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import Button from './Button';
 import Ripple from './Ripple';
+import { useSelector } from 'react-redux';
+import { selectCartItems } from '~/cart/CartSlice';
 import OtsvLogo from '~/assets/images/logo-otsv.webp';
 import CartIcon from '~/assets/images/icons/cart.svg';
 import { BsChevronUp } from 'react-icons/bs';
-import { useCart } from '~/context/CartContext';
 import { HiBars3 } from 'react-icons/hi2';
 const cx = classNames.bind(styles);
 function Header() {
-   const { cart } = useCart();
+   const cart = useSelector(selectCartItems);
    const [isScrolled, setIsScrolled] = useState(false);
 
    useEffect(() => {

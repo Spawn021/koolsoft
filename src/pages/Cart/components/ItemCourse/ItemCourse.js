@@ -5,14 +5,15 @@ import classNames from 'classnames/bind';
 import styles from './ItemCourse.module.scss';
 import { AiOutlineClose } from 'react-icons/ai';
 import { MdSell, MdFormatListNumbered, MdOutlineGTranslate } from 'react-icons/md';
-import { useCart } from '~/context/CartContext';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart as addToCartAction, selectCartItems } from '~/cart/CartSlice';
 
 const cx = classNames.bind(styles);
 
 function ItemCourse({ imgSrc, courseName, description, reviewCount, price }) {
    const [showModal, setShowModal] = useState(false);
-   const { addToCart } = useCart();
-   const { cart } = useCart();
+   const dispatch = useDispatch();
+   const cartItems = useSelector(selectCartItems);
    const openModal = () => {
       setShowModal(true);
    };
@@ -20,11 +21,11 @@ function ItemCourse({ imgSrc, courseName, description, reviewCount, price }) {
    const closeModal = () => {
       setShowModal(false);
    };
-   const isInCart = cart.some((item) => item.courseName === courseName);
    const handleAddToCart = () => {
-      addToCart({ imgSrc, courseName, price });
+      dispatch(addToCartAction({ imgSrc, courseName, price }));
    };
-   console.log(handleAddToCart);
+
+   const isInCart = cartItems.some((item) => item.courseName === courseName);
 
    return (
       <div className={cx('item-course-wrapper')}>
