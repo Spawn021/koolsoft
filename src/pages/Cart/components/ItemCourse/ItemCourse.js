@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BsFillPeopleFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './ItemCourse.module.scss';
@@ -10,22 +11,22 @@ import { addToCart as addToCartAction, selectCartItems } from '~/cart/CartSlice'
 
 const cx = classNames.bind(styles);
 
-function ItemCourse({ imgSrc, courseName, description, reviewCount, price }) {
+function ItemCourse({ id, imgSrc, courseName, description, reviewCount, price }) {
    const [showModal, setShowModal] = useState(false);
-   const dispatch = useDispatch();
-   const cartItems = useSelector(selectCartItems);
    const openModal = () => {
       setShowModal(true);
    };
-
    const closeModal = () => {
       setShowModal(false);
    };
+
+   const dispatch = useDispatch();
+   const cartItems = useSelector(selectCartItems);
    const handleAddToCart = () => {
-      dispatch(addToCartAction({ imgSrc, courseName, price }));
+      dispatch(addToCartAction({ id, imgSrc, courseName, description, price }));
    };
 
-   const isInCart = cartItems.some((item) => item.courseName === courseName);
+   const isInCart = cartItems.some((item) => item.id === id);
 
    return (
       <div className={cx('item-course-wrapper')}>
@@ -199,13 +200,17 @@ function ItemCourse({ imgSrc, courseName, description, reviewCount, price }) {
                         </div>
                      </div>
                      <div className={cx('modal-footer')}>
-                        {isInCart ? (
-                           <button className={cx('btn-add-cart')}>Xem giỏ hàng</button>
-                        ) : (
-                           <button className={cx('btn-add-cart')} onClick={handleAddToCart}>
-                              Thêm vào giỏ hàng
-                           </button>
-                        )}
+                        <div className={cx('btn-container')}>
+                           {isInCart ? (
+                              <Link to="/course" style={{ textDecoration: 'none' }}>
+                                 <button className={cx('btn-add-cart')}>Xem giỏ hàng</button>
+                              </Link>
+                           ) : (
+                              <button className={cx('btn-add-cart')} onClick={handleAddToCart}>
+                                 Thêm vào giỏ hàng
+                              </button>
+                           )}
+                        </div>
                         <button className={cx('btn-buy-now')}>Mua ngay</button>
                      </div>
                   </div>
