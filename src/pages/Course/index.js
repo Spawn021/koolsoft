@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Course.module.scss';
 import { useSelector, useDispatch } from 'react-redux';
@@ -8,6 +9,48 @@ import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 function Course() {
    const cartItems = useSelector(selectCartItems);
+   const [isAllChecked, setIsAllChecked] = useState(false);
+   const [selectedItems, setSelectedItems] = useState({});
+   const [totalPrice, setTotalPrice] = useState(0);
+
+   useEffect(() => {
+      calculateTotalPrice();
+   }, [selectedItems, cartItems]);
+
+   const calculateTotalPrice = () => {
+      let total = 0;
+
+      cartItems.forEach((item) => {
+         if (selectedItems[item.id]) {
+            const numericPrice = parseFloat(item.price.replace(/[^\d.]/g, ''));
+            total += numericPrice; // Giả sử price là một số dạng string
+         }
+      });
+
+      setTotalPrice(total.toLocaleString('vi-VN').replace('.', ','));
+   };
+
+   const handleItemCheckboxChange = (itemId, isChecked) => {
+      const updatedSelectedItems = { ...selectedItems, [itemId]: isChecked };
+      setSelectedItems(updatedSelectedItems);
+
+      const allChecked = cartItems.every((item) => updatedSelectedItems[item.id]);
+
+      setIsAllChecked(allChecked);
+   };
+
+   const handleSelectAll = () => {
+      const updatedSelectedItems = {};
+      const newIsAllChecked = !isAllChecked;
+
+      cartItems.forEach((item) => {
+         updatedSelectedItems[item.id] = newIsAllChecked;
+      });
+
+      setSelectedItems(updatedSelectedItems);
+      setIsAllChecked(newIsAllChecked);
+   };
+
    return (
       <div className={cx('wrapper')}>
          <div className={cx('path-link')}>
@@ -63,6 +106,8 @@ function Course() {
                                  courseName={course.courseName}
                                  description={course.description}
                                  price={course.price}
+                                 isChecked={selectedItems[course.id] || false}
+                                 onCheckboxChange={handleItemCheckboxChange}
                               />
                            ))}
                         </div>
@@ -71,17 +116,18 @@ function Course() {
                               <div className={cx('order-info')}>Thông tin đơn hàng</div>
                               <div className={cx('order-provisional')}>
                                  <span>Tạm tính</span>
-                                 <span>0VND</span>
+                                 <span>{totalPrice}VND</span>
                               </div>
                               <div className={cx('order-sum')}>
                                  <span>Tổng tiền</span>
-                                 <div>0VND</div>
+                                 <div>{totalPrice}VND</div>
                               </div>
                               <button className={cx('btn-pay')}>THANH TOÁN</button>
                            </div>
                            <div className={cx('select-all')}>
-                              <button className={cx('btn-select')}>Chọn tất cả</button>
-                              {/* <button className={cx('btn-select')}>Bỏ chọn tất cả</button> */}
+                              <button className={cx('btn-select')} onClick={handleSelectAll}>
+                                 {isAllChecked ? 'Bỏ chọn tất cả' : 'Chọn tất cả'}
+                              </button>
                            </div>
                         </div>
                      </div>

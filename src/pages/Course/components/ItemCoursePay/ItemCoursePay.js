@@ -6,17 +6,25 @@ import { IoCloseSharp } from 'react-icons/io5';
 import { useDispatch } from 'react-redux';
 import { removeFromCart } from '~/cart/CartSlice';
 const cx = classNames.bind(styles);
-function ItemCoursePay({ id, imgSrc, courseName, description, price }) {
+function ItemCoursePay({ id, imgSrc, courseName, description, price, isChecked, onCheckboxChange }) {
    const dispatch = useDispatch();
 
    const handleRemoveFromCart = () => {
       dispatch(removeFromCart(id));
    };
+   const handleCheckboxChange = (event) => {
+      onCheckboxChange(id, event.target.checked);
+   };
    return (
       <div>
          <div className={cx('item-course-in-cart')}>
             <div className={cx('check-box')}>
-               <input className={cx('check-box-css')} type="checkbox"></input>
+               <input
+                  className={cx('check-box-css')}
+                  type="checkbox"
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+               />
             </div>
             <div className={cx('item-course-wrapper')}>
                <div className={cx('item-course-left')}>
@@ -92,9 +100,12 @@ function ItemCoursePay({ id, imgSrc, courseName, description, price }) {
    );
 }
 ItemCoursePay.propTypes = {
+   id: PropTypes.number.isRequired,
    imgSrc: PropTypes.string.isRequired,
    courseName: PropTypes.string.isRequired,
    description: PropTypes.string.isRequired,
    price: PropTypes.string.isRequired,
+   isChecked: PropTypes.bool.isRequired,
+   onCheckboxChange: PropTypes.func.isRequired,
 };
 export default ItemCoursePay;
