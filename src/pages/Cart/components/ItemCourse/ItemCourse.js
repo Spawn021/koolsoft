@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { BsFillPeopleFill } from 'react-icons/bs';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
@@ -24,6 +27,17 @@ function ItemCourse({ id, imgSrc, courseName, description, reviewCount, price })
    const cartItems = useSelector(selectCartItems);
    const handleAddToCart = () => {
       dispatch(addToCartAction({ id, imgSrc, courseName, description, price }));
+      toast.success('Thêm vào giỏ hàng thành công', {
+         position: 'top-center',
+         autoClose: 5000,
+         hideProgressBar: true,
+         closeOnClick: true,
+         pauseOnHover: true,
+         draggable: true,
+         progress: undefined,
+         theme: 'light',
+         closeButton: false,
+      });
    };
 
    const isInCart = cartItems.some((item) => item.id === id);
@@ -56,6 +70,7 @@ function ItemCourse({ id, imgSrc, courseName, description, reviewCount, price })
                </div>
             </div>
          </div>
+         <ToastContainer />
          {showModal && (
             <div className={cx('modal')} onClick={closeModal}>
                <div className={cx('modal-overlay')}></div>

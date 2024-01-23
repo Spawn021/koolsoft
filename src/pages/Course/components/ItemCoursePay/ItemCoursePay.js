@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './ItemCoursePay.module.scss';
@@ -11,6 +12,17 @@ function ItemCoursePay({ id, imgSrc, courseName, description, price, isChecked, 
 
    const handleRemoveFromCart = () => {
       dispatch(removeFromCart(id));
+      toast.error('Xóa khỏi giỏ hàng thành công!', {
+         position: 'top-center',
+         autoClose: 5000,
+         hideProgressBar: true,
+         closeOnClick: true,
+         pauseOnHover: true,
+         draggable: true,
+         progress: undefined,
+         theme: 'light',
+         closeButton: false,
+      });
    };
    const handleCheckboxChange = (event) => {
       onCheckboxChange(id, event.target.checked);
@@ -93,6 +105,7 @@ function ItemCoursePay({ id, imgSrc, courseName, description, price, isChecked, 
                         </button>
                      </div>
                   </div>
+                  <ToastContainer />
                </div>
             </div>
          </div>
