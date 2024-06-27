@@ -39,7 +39,7 @@ const SchoolCard = ({ img, shortname, fullname, course }) => {
                   <div className={cx('text-course')}>{course}</div>
                </div>
                <div>
-                  <button className={cx('btn-course')}>Xem thêm</button>
+                  <button className={cx('btn-course')}>Xem chi tiết</button>
                </div>
             </div>
          </Link>

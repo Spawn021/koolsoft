@@ -14,7 +14,7 @@ function Footer() {
                      <div className={cx('big-column-item-left')}>
                         <div className={cx('small-column-item-left')}>
                            <div className={cx('big-text')}>Thông tin</div>
-                           <div className={cx('small-text')}>Email: info@onthisinhvien.com</div>
+                           <div className={cx('small-text')}>Email: info@a.com</div>
                            <div className={cx('small-text')}>Hotline: 02473 010 929</div>
                            <div className={cx('small-text')}>Giờ làm việc: 8h00 - 11h30, 14h - 17h30</div>
                            <img src="https://onthisinhvien.com/_next/image?url=%2Fimages%2Ficon%2Fotsv%2Fdathongbao.png&w=256&q=75"></img>
@@ -23,17 +23,16 @@ function Footer() {
                         <div className={cx('small-column-item-right')}>
                            <div className={cx('big-text')}>Tiện ích</div>
                            <div className={cx('small-text')}>Trang chủ</div>
-                           <div className={cx('small-text')}>Khóa học</div>
-                           <div className={cx('small-text')}>Tuyển dụng</div>
-                           <div className={cx('small-text')}>Đề thi</div>
-                           <div className={cx('small-text')}>Tin tức</div>
+                           <div className={cx('small-text')}>Sản phẩm</div>
+                           <div className={cx('small-text')}>Combo</div>
+                           <div className={cx('small-text')}>Giảm giá</div>
                         </div>
                      </div>
                      <div className={cx('big-column-item-right')}>
                         <div className={cx('small-column-item-left')}>
                            <div className={cx('big-text')}>Chính sách</div>
                            <div className={cx('small-text')}>Những câu hỏi thường gặp</div>
-                           <div className={cx('small-text')}>Bộ quy tắc hành xử của mentor và học viên trên otsv</div>
+                           <div className={cx('small-text')}>Bộ quy tắc hành xử</div>
                            <div className={cx('small-text')}>Chính sách chung</div>
                            <div className={cx('small-text')}>Chính sách bảo mật thông tin</div>
                            <div className={cx('small-text')}>Hướng dẫn kích hoạt khóa học</div>
@@ -69,13 +68,13 @@ function Footer() {
                <div className={cx('box')}>
                   <MdOutlineLocationOn className={cx('icon-location')} />
                   <div className={cx('small-text')}>
-                     Địa chỉ: Số 69, ngõ 40 Tạ Quang Bửu, Q.Hai Bà Trưng, TP. Hà Nội
+                     Địa chỉ: 54 ngõ 34 Lương Khánh Thiện, Tương Mai, Hoàng Mai, Hà Nội
                   </div>
                </div>
             </div>
          </div>
          <div className={cx('footer2')}>
-            @2013 - Công ty Cổ phần Đầu tư và Phát triển Koolsoft
+            @2013 - Công ty Cổ phần Đầu tư và Phát triển ABC
             <br></br>
             Giấy chứng nhận đăng ký doanh nghiệp số: 0106353044, cấp bởi Sở kế hoạch và đầu tư TP. Hà Nội
          </div>

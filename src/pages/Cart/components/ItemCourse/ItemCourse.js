@@ -77,7 +77,7 @@ function ItemCourse({ id, imgSrc, courseName, description, reviewCount, price })
                <div className={cx('modal-content')} onClick={(e) => e.stopPropagation()}>
                   <div className={cx('modal-inner')}>
                      <div className={cx('modal-title')}>
-                        <div>NEU EBOOK PLUS TRIẾT HỌC MÁC-LÊNIN</div>
+                        <div>Giày Asics Court MZ ‘Cream Black Gum’</div>
                         <AiOutlineClose className={cx('close')} onClick={closeModal} />
                      </div>
                      <div className={cx('modal-body')}>
@@ -85,7 +85,7 @@ function ItemCourse({ id, imgSrc, courseName, description, reviewCount, price })
                            <div className={cx('modal-image-wrapper')}>
                               <img
                                  className={cx('modal-image')}
-                                 src="https://storage.googleapis.com/onthisinhvien.appspot.com/images/543778860-1652533318725-triethocmac-lenin.jpg"
+                                 src="https://cdn.vortexs.io/api/images/f271fe4f-533b-4573-a098-5a4920515800/375/w/giay-asics-court-mz-cream-black-gum-white-brown-1203a127-752.jpeg"
                                  alt="Triết học Mác-LeNin"
                               ></img>
                            </div>
@@ -97,11 +97,11 @@ function ItemCourse({ id, imgSrc, courseName, description, reviewCount, price })
                                  </div>
                                  <div className={cx('modal-item-course')}>
                                     <MdFormatListNumbered className={cx('icon-count')} />
-                                    <span className={cx('count-course')}>Số bài học: 7</span>
+                                    {/* <span className={cx('count-course')}>Số bài học: 7</span> */}
                                  </div>
                                  <div className={cx('modal-item-course')}>
                                     <MdOutlineGTranslate className={cx('icon-translate')} />
-                                    <span className={cx('language-course')}>Ngôn ngữ: Tiếng việt</span>
+                                    {/* <span className={cx('language-course')}>Ngôn ngữ: Tiếng việt</span> */}
                                  </div>
                                  <div className={cx('modal-item-course')}>
                                     <span className={cx('detail-course')}>Xem chi tiết</span>
@@ -111,9 +111,9 @@ function ItemCourse({ id, imgSrc, courseName, description, reviewCount, price })
                         </div>
                         <div className={cx('description')}>
                            <h1>
-                              <strong>NEU EBOOK PLUS&nbsp;TRIẾT HỌC MÁC-LÊNIN&nbsp;- Chinh phục A+ K65&nbsp;NEU</strong>
+                              <strong>Giày Asics Court MZ ‘Cream Black Gum’</strong>
                            </h1>
-                           <div className={cx('text')}>
+                           {/* <div className={cx('text')}>
                               Hey, chào bạn, mình là Admin của&nbsp;
                               <strong>OTSV Team</strong>. Mình sẽ là người đồng hành cùng bạn trong "
                               <strong>NEU Ebook Plus Triết học Mác Lênin</strong>
@@ -211,7 +211,7 @@ function ItemCourse({ id, imgSrc, courseName, description, reviewCount, price })
                            </h3>
                            <div className={cx('text')} style={{ margin: '14px 0' }}>
                               <p>Hết rùi, chúc bạn thành công, và hẹn bạn trong khoá học nhé.</p>
-                           </div>
+                           </div> */}
                         </div>
                      </div>
                      <div className={cx('modal-footer')}>

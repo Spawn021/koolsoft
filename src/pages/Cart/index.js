@@ -14,6 +14,7 @@ import CourseIcon from '../../assets/images/icons/khoa-luyen.svg';
 import StdIcon from '../../assets/images/icons/hocvien.svg';
 import OnePeople from '../../assets/images/icons/kha-gioi.svg';
 import Message from '../../assets/images/icons/feebb.svg';
+import ShooesIcon from '../../assets/images/shoes.png';
 import coursesData from './data/coursesData';
 const cx = classNames.bind(styles);
 function Cart() {
@@ -34,24 +35,20 @@ function Cart() {
                <div className={cx('banner-school')}>
                   <img
                      className={cx('image-banner')}
-                     src="https://onthisinhvien.com/_next/image?url=%2Fimages%2Ficon%2Fotsv%2Fbanner%2Fneu.jpg&w=1920&q=75"
+                     src="https://media3.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/May2024/SOMI_PREMIUM_XAM_(1).png"
                      alt="ImageBanner"
                   ></img>
                </div>
                <div className={cx('category-course')}>
                   <div className={cx('header-category-course')}>
                      <div className={cx('name-school')}>
-                        <img
-                           className={cx('icon-tag')}
-                           src="https://onthisinhvien.com/images/icon/otsv/icon-tag-school.svg"
-                           alt="IconTag"
-                        ></img>
-                        <div className={cx('school-name')}>Đại học Kinh tế Quốc dân</div>
+                        <img className={cx('icon-tag')} src={ShooesIcon} alt="IconTag"></img>
+                        <div className={cx('school-name')}>Giày dép thời thượng</div>
                      </div>
                      <div className={cx('search-course')}>
                         <button className={cx('btn-combo')}>Hot combo</button>
                         <div className={cx('form-search')}>
-                           <input className={cx('input-search')} placeholder="Tìm kiếm khóa học..."></input>
+                           <input className={cx('input-search')} placeholder="Tìm kiếm sản phẩm..."></input>
                            <div>
                               <FontAwesomeIcon className={cx('button-search')} icon={faMagnifyingGlass} />
                            </div>
@@ -59,7 +56,7 @@ function Cart() {
                      </div>
                   </div>
                   <div className={cx('block-category-school')}>
-                     <span className={cx('name-category')}>Môn đại cương (68 Khoá)</span>
+                     <span className={cx('name-category')}>Hàng mới về</span>
                      <div className={cx('list-course')}>
                         {allCourses.slice(0, coursesToShow).map((course, index) => (
                            <ItemCourse
@@ -83,7 +80,7 @@ function Cart() {
                      )}
                   </div>
                   <div className={cx('block-category-school')}>
-                     <span className={cx('name-category')}>MÔN CHUYÊN NGÀNH (87 KHOÁ)</span>
+                     <span className={cx('name-category')}>Hàng Hot Giá Xịn</span>
                      <div className={cx('list-course')}>
                         {allCourses.slice(0, coursesToShow).map((course, index) => (
                            <ItemCourse
@@ -107,7 +104,7 @@ function Cart() {
                      )}
                   </div>
                   <div className={cx('block-category-school')}>
-                     <span class={cx('name-category')}>MÔN HỌC AEP (40 KHOÁ)</span>
+                     <span class={cx('name-category')}>Hàng Deal Ngon</span>
                      <div className={cx('list-course')}>
                         {allCourses.slice(0, coursesToShow).map((course, index) => (
                            <ItemCourse
@@ -129,20 +126,17 @@ function Cart() {
                            </button>
                         </div>
                      )}
-                  </div>
-                  <div className={cx('block-category-school')}>
-                     <span className={cx('name-category')}>NGOẠI NGỮ - TIN HỌC - CĐR (0 KHOÁ)</span>
                   </div>
                </div>
                <div className={cx('panel-feedback')}>
                   <div className={cx('feedback-container')}>
-                     <h3>Phản hồi của học viên kỳ trước</h3>
+                     <h3>Phản hồi của khách hàng</h3>
                   </div>
                   <div className={cx('slide-feedback')}>
                      <SwiperCart />
                   </div>
                </div>
-               <div className={cx('achive')}>
+               {/* <div className={cx('achive')}>
                   <div className={cx('slogan')}>
                      ÔN THI SINH VIÊN <br></br> THAY ĐỔI CÁCH HỌC VÀ THI CỦA BẠN
                   </div>
@@ -167,7 +161,7 @@ function Cart() {
                      <ItemCommunity nameCm="Góc ôn thi AEP - NEU Shares ✅" numMem="3100" rate="****" />
                      <ItemCommunity nameCm="Góc tuyển dụng NEU ✅" numMem="9000" rate="****" />
                   </div>
-               </div>
+               </div> */}
             </div>
          </div>
       </div>

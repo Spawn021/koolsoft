@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 import Button from './Button';
 import Ripple from './Ripple';
-import OtsvLogo from '~/assets/images/logo-otsv.webp';
+import OtsvLogo from '~/assets/images/logo.jpg';
 import CartIcon from '~/assets/images/icons/cart.svg';
 import { BsChevronUp } from 'react-icons/bs';
 import { HiBars3 } from 'react-icons/hi2';
@@ -42,7 +42,7 @@ function Header() {
          <div className={cx('chat-panel')}>
             <button className={cx('float-chat')}>
                <img src="https://onthisinhvien.com/images/icon/otsv/message.svg"></img>
-               <span>Nhắn tin cho Ôn Thi Sinh Viên!</span>
+               <span>Chăm sóc khách hàng</span>
                <BsChevronUp className={cx('icon-mess')} />
             </button>
          </div>
@@ -55,7 +55,7 @@ function Header() {
                            <img src={OtsvLogo} alt="Trang chủ" className={cx('header__navbar-logo-img')} />
                         </a>
                      </Link>
-                     <span className={cx('header__navbar-slogan')}>Ôn thi nhàn, Kết quả cao</span>
+                     <span className={cx('header__navbar-slogan')}>Giày Đẹp, Bước Đi Tự Tin!</span>
                   </li>
                </ul>
                <ul className={cx('header__navbar-list')}>
@@ -80,110 +80,110 @@ function Header() {
                   >
                      {/* eslint-disable-next-line */}
                      <a href="" className={cx('header__navbar-item-link')}>
-                        KHÓA HỌC
+                        SẢN PHẨM
                      </a>
                      <div className={cx('header__school')}>
                         <ul className={cx('header__school-list')}>
+                           <Link to="/cart" className={cx('header__school-item')} style={{ textDecoration: 'none' }}>
+                              {/* eslint-disable-next-line */}
+                              <a href="" className={cx('header__school-item-name')}>
+                                 Giày dép
+                              </a>
+                           </Link>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC KINH TẾ QUỐC DÂN
+                                 Áo
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC XÂY DỰNG
+                                 Quần
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC KINH TẾ THÀNH PHỐ HCM
+                                 Balo - Túi xách
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC KINH TẾ - LUẬT HCM
+                                 Trang sức - Phụ kiện
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC NGÂN HÀNG THÀNH PHỐ HCM
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC THƯƠNG MẠI
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC BÁCH KHOA HÀ NỘI
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC TÔN ĐỨC THẮNG
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC TÀI CHÍNH - MARKETING
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC VINH
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 HỌC VIỆN TÀI CHÍNH
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 HỌC VIỆN NGÂN HÀNG
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC CÔNG ĐOÀN
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 ĐẠI HỌC BÁCH KHOA THÀNH PHỐ HCM
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 HỌC VIỆN NÔNG NGHIỆP VN
+                                 Khác
                               </a>
                            </li>
                            <li className={cx('header__school-item')}>
                               {/* eslint-disable-next-line */}
                               <a href="" className={cx('header__school-item-name')}>
-                                 CHƯƠNG TRÌNH TIẾNG ANH
-                              </a>
-                           </li>
-                           <li className={cx('header__school-item')}>
-                              {/* eslint-disable-next-line */}
-                              <a href="" className={cx('header__school-item-name')}>
-                                 TRƯỜNG KHÁC
+                                 Khác
                               </a>
                            </li>
                         </ul>
@@ -192,9 +192,16 @@ function Header() {
                   <li className={cx('header__navbar-item')}>
                      {/* eslint-disable-next-line */}
                      <a href="" className={cx('header__navbar-item-link')}>
-                        KÍCH HOẠT
+                        COMBO
                      </a>
                   </li>
+                  <li className={cx('header__navbar-item')}>
+                     {/* eslint-disable-next-line */}
+                     <a href="" className={cx('header__navbar-item-link')}>
+                        GIẢM GIÁ
+                     </a>
+                  </li>
+
                   <li className={cx('header__navbar-item', 'header__navbar-item-has-cart')}>
                      <Link to="/course" style={{ textDecoration: 'none' }}>
                         <div href="" className={cx('header__navbar-item-link')}>
@@ -211,12 +218,14 @@ function Header() {
                         <span className={cx('header__cart-name')}>Giỏ hàng</span>
                      </div>
                   </li>
-                  <li className={cx('header__navbar-item')}>
-                     <Button>
-                        ĐĂNG NHẬP
-                        <Ripple color={'#617595'} duration={1000} />
-                     </Button>
-                  </li>
+                  <Link to="/login" style={{ textDecoration: 'none' }}>
+                     <li className={cx('header__navbar-item')}>
+                        <Button>
+                           ĐĂNG NHẬP
+                           <Ripple color={'#617595'} duration={1000} />
+                        </Button>
+                     </li>
+                  </Link>
                   <li className={cx('header__navbar-item')}>
                      <Button>
                         ĐĂNG KÝ

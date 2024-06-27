@@ -12,7 +12,7 @@ function DefaultLayout({ children }) {
 
    switch (location.pathname) {
       case '/':
-         contentHeight = '5000px';
+         contentHeight = '4750px';
          break;
       case '/cart':
          contentHeight = '3000px';

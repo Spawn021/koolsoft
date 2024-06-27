@@ -32,7 +32,7 @@ export default function LabTabs() {
             <Box>
                <TabList
                   onChange={handleChange}
-                  aria-label="Hệ thống Ôn thi sinh viên"
+                  aria-label="Hệ thống Fashion Shoes"
                   sx={{ justifyContent: 'space-around', display: 'flex' }}
                   className={cx('tab-list')}
                >
@@ -58,7 +58,7 @@ export default function LabTabs() {
                   </div>
                   <div className={cx('content')}>
                      Bằng nỗ lực sáng tạo nội dung, công nghệ và đổi mới trong quản trị,
-                     <span> ÔN THI SINH VIÊN </span>
+                     <span> FASHION SHOES </span>
                      mong muốn trở thành công ty có phần mềm luyện thi được sinh viên sử dụng phổ biến nhất trong nước.
                   </div>
                </div>
@@ -69,7 +69,7 @@ export default function LabTabs() {
                      <img src="https://onthisinhvien.com/_next/image?url=%2Fimages%2Ficon%2Fotsv%2Fsu-menh.png&w=1920&q=75"></img>
                   </div>
                   <div className={cx('content')}>
-                     Sứ mệnh của OTSV là phát triển phần mềm luyện thi thay đổi cách học và ôn thi thông qua công cụ với
+                     Sứ mệnh của FS là phát triển phần mềm luyện thi thay đổi cách học và ôn thi thông qua công cụ với
                      nội dung bám sát chương trình học và tính năng thông minh tăng hiệu quả học tập.
                   </div>
                </div>
@@ -83,8 +83,8 @@ export default function LabTabs() {
                      <div className={cx('item-content')}>
                         <div className={cx('title')}>Tâm Huyết</div>
                         <div className={cx('content')}>
-                           Đội ngũ Ôn thi sinh viên từ những anh/chị biên soạn nội dung, đến anh/chị admin tin tức và
-                           admin học tập luôn
+                           Đội ngũ FASHION SHOES từ những anh/chị biên soạn nội dung, đến anh/chị admin tin tức và admin
+                           học tập luôn
                            <span> NHIỆT TÌNH, TÂM HUYẾT </span>
                            phục vụ vì sinh viên, là người bạn đồng hành trong học tập.
                         </div>
@@ -112,7 +112,7 @@ export default function LabTabs() {
                      <div className={cx('item-content')}>
                         <div className={cx('title')}>Con người</div>
                         <div className={cx('content')}>
-                           OTSV team gồm các anh/chị không chỉ
+                           FS team gồm các anh/chị không chỉ
                            <span> GIỎI CHUYÊN MÔN, KỸ NĂNG VĂN PHÒNG </span>
                            mà còn năng động và sáng tạo. Không ngừng học hỏi và vượt qua mọi giới hạn. Sẵn sàng tiếp
                            nhận tích cực những đóng góp từ phía học viên và cải thiện nội dung hàng kỳ. Giữ trong mình
@@ -139,7 +139,7 @@ export default function LabTabs() {
                      <img src="https://onthisinhvien.com/images/icon/otsv/chat-luong.svg"></img>
                      <div className={cx('text-content')}>
                         Năm 2019-2020, Mở rộng các chi nhánh (NEU, HUCE, UEH, UEL, TMU, HVTC,..) và lấy tên gọi chính
-                        thức là Ôn thi sinh viên vào ngày: 01/08/2019
+                        thức là FASHION SHOES vào ngày: 01/08/2019
                      </div>
                   </div>
                   <div className={cx('item')}>
@@ -156,8 +156,8 @@ export default function LabTabs() {
                      <iframe
                         width="100%"
                         height="400"
-                        src="https://www.youtube.com/embed/NNYzsy1HFZY"
-                        title="Cắm trại cùng OTSV 2022"
+                        src="https://www.youtube.com/embed/kRpQPe5ruP8?si=oURg5ZTHQQOYPVLL"
+                        title="Cắm trại cùng FS 2022"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen=""
